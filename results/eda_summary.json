@@ -1,0 +1,168 @@
+{
+  "n_rows": 150,
+  "n_features": 4,
+  "class_counts": {
+    "setosa": 50,
+    "versicolor": 50,
+    "virginica": 50
+  },
+  "missing_total": 0,
+  "duplicate_rows": 1,
+  "iqr_outlier_rows": 4,
+  "iqr_outlier_detail": [
+    {
+      "feature": "sepal_length",
+      "q1": 5.1,
+      "q3": 6.4,
+      "lower": 3.1499999999999986,
+      "upper": 8.350000000000001,
+      "n_outliers": 0,
+      "outliers": []
+    },
+    {
+      "feature": "sepal_width",
+      "q1": 2.8,
+      "q3": 3.3,
+      "lower": 2.05,
+      "upper": 4.05,
+      "n_outliers": 4,
+      "outliers": [
+        {
+          "species": "setosa",
+          "sepal_width": 4.4
+        },
+        {
+          "species": "setosa",
+          "sepal_width": 4.1
+        },
+        {
+          "species": "setosa",
+          "sepal_width": 4.2
+        },
+        {
+          "species": "versicolor",
+          "sepal_width": 2.0
+        }
+      ]
+    },
+    {
+      "feature": "petal_length",
+      "q1": 1.6,
+      "q3": 5.1,
+      "lower": -3.649999999999999,
+      "upper": 10.349999999999998,
+      "n_outliers": 0,
+      "outliers": []
+    },
+    {
+      "feature": "petal_width",
+      "q1": 0.3,
+      "q3": 1.8,
+      "lower": -1.95,
+      "upper": 4.05,
+      "n_outliers": 0,
+      "outliers": []
+    }
+  ],
+  "describe": {
+    "sepal_length": {
+      "count": 150.0,
+      "mean": 5.8433,
+      "std": 0.8281,
+      "min": 4.3,
+      "25%": 5.1,
+      "50%": 5.8,
+      "75%": 6.4,
+      "max": 7.9,
+      "cv": 0.1417
+    },
+    "sepal_width": {
+      "count": 150.0,
+      "mean": 3.0573,
+      "std": 0.4359,
+      "min": 2.0,
+      "25%": 2.8,
+      "50%": 3.0,
+      "75%": 3.3,
+      "max": 4.4,
+      "cv": 0.1426
+    },
+    "petal_length": {
+      "count": 150.0,
+      "mean": 3.758,
+      "std": 1.7653,
+      "min": 1.0,
+      "25%": 1.6,
+      "50%": 4.35,
+      "75%": 5.1,
+      "max": 6.9,
+      "cv": 0.4697
+    },
+    "petal_width": {
+      "count": 150.0,
+      "mean": 1.1993,
+      "std": 0.7622,
+      "min": 0.1,
+      "25%": 0.3,
+      "50%": 1.3,
+      "75%": 1.8,
+      "max": 2.5,
+      "cv": 0.6356
+    }
+  },
+  "correlation": {
+    "sepal_length": {
+      "sepal_length": 1.0,
+      "sepal_width": -0.1176,
+      "petal_length": 0.8718,
+      "petal_width": 0.8179
+    },
+    "sepal_width": {
+      "sepal_length": -0.1176,
+      "sepal_width": 1.0,
+      "petal_length": -0.4284,
+      "petal_width": -0.3661
+    },
+    "petal_length": {
+      "sepal_length": 0.8718,
+      "sepal_width": -0.4284,
+      "petal_length": 1.0,
+      "petal_width": 0.9629
+    },
+    "petal_width": {
+      "sepal_length": 0.8179,
+      "sepal_width": -0.3661,
+      "petal_length": 0.9629,
+      "petal_width": 1.0
+    }
+  },
+  "feature_association": {
+    "sepal_length": {
+      "F": 119.26450218449871,
+      "p_value": 1.6696691907731882e-31,
+      "mutual_info": 0.5113651047986985
+    },
+    "sepal_width": {
+      "F": 49.16004008961098,
+      "p_value": 4.492017133312052e-17,
+      "mutual_info": 0.2994243107086385
+    },
+    "petal_length": {
+      "F": 1180.1611822529776,
+      "p_value": 2.85677661096213e-91,
+      "mutual_info": 0.9925730881120935
+    },
+    "petal_width": {
+      "F": 960.0071468018025,
+      "p_value": 4.169445839445089e-85,
+      "mutual_info": 0.9856425060576723
+    }
+  },
+  "strongest_correlation": {
+    "pair": [
+      "petal_length",
+      "petal_width"
+    ],
+    "r": 0.962865431402796
+  }
+}

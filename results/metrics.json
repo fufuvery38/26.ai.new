@@ -1,0 +1,386 @@
+{
+  "experiment": {
+    "seed": 42,
+    "test_size": 0.2,
+    "n_dev": 120,
+    "n_test": 30,
+    "cv_folds": 5,
+    "selection_metric": "macro_f1",
+    "model": "MLP-8",
+    "hidden_layer_sizes": [
+      8
+    ],
+    "alpha": 0.0001,
+    "learning_rate_init": 0.01,
+    "epochs_trained": 100,
+    "elapsed_seconds": 19.45
+  },
+  "cv_results": [
+    {
+      "model": "MLP-8",
+      "acc_mean": 0.966667,
+      "acc_std": 0.034861,
+      "f1_mean": 0.966337,
+      "f1_std": 0.035356,
+      "logloss_mean": 0.110256,
+      "logloss_std": 0.086381,
+      "fit_seconds": 3.593938
+    },
+    {
+      "model": "MLP-16-8",
+      "acc_mean": 0.95,
+      "acc_std": 0.018634,
+      "f1_mean": 0.949605,
+      "f1_std": 0.019152,
+      "logloss_mean": 0.233612,
+      "logloss_std": 0.182477,
+      "fit_seconds": 2.559804
+    },
+    {
+      "model": "MLP-32-16",
+      "acc_mean": 0.958333,
+      "acc_std": 0.029463,
+      "f1_mean": 0.957971,
+      "f1_std": 0.029932,
+      "logloss_mean": 0.305099,
+      "logloss_std": 0.235565,
+      "fit_seconds": 2.618284
+    },
+    {
+      "model": "MLP-16-α0.01",
+      "acc_mean": 0.958333,
+      "acc_std": 0.029463,
+      "f1_mean": 0.957971,
+      "f1_std": 0.029932,
+      "logloss_mean": 0.204274,
+      "logloss_std": 0.128873,
+      "fit_seconds": 0.274886
+    },
+    {
+      "model": "邏輯迴歸",
+      "acc_mean": 0.958333,
+      "acc_std": 0.029463,
+      "f1_mean": 0.957971,
+      "f1_std": 0.029932,
+      "logloss_mean": 0.162475,
+      "logloss_std": 0.013257,
+      "fit_seconds": 0.152401
+    },
+    {
+      "model": "SVM (RBF)",
+      "acc_mean": 0.966667,
+      "acc_std": 0.018634,
+      "f1_mean": 0.966536,
+      "f1_std": 0.018707,
+      "logloss_mean": 0.122799,
+      "logloss_std": 0.01732,
+      "fit_seconds": 0.170728
+    },
+    {
+      "model": "kNN (k=5)",
+      "acc_mean": 0.958333,
+      "acc_std": 0.029463,
+      "f1_mean": 0.957971,
+      "f1_std": 0.029932,
+      "logloss_mean": 0.404067,
+      "logloss_std": 0.636128,
+      "fit_seconds": 0.179964
+    }
+  ],
+  "cv_fold_accuracies": {
+    "MLP-8": [
+      0.9583333333333334,
+      1.0,
+      1.0,
+      0.9583333333333334,
+      0.9166666666666666
+    ],
+    "MLP-16-8": [
+      0.9583333333333334,
+      0.9583333333333334,
+      0.9583333333333334,
+      0.9583333333333334,
+      0.9166666666666666
+    ],
+    "MLP-32-16": [
+      0.9583333333333334,
+      1.0,
+      0.9583333333333334,
+      0.9583333333333334,
+      0.9166666666666666
+    ],
+    "MLP-16-α0.01": [
+      0.9583333333333334,
+      1.0,
+      0.9583333333333334,
+      0.9583333333333334,
+      0.9166666666666666
+    ],
+    "邏輯迴歸": [
+      0.9583333333333334,
+      1.0,
+      0.9583333333333334,
+      0.9583333333333334,
+      0.9166666666666666
+    ],
+    "SVM (RBF)": [
+      0.9583333333333334,
+      1.0,
+      0.9583333333333334,
+      0.9583333333333334,
+      0.9583333333333334
+    ],
+    "kNN (k=5)": [
+      0.9583333333333334,
+      1.0,
+      0.9583333333333334,
+      0.9166666666666666,
+      0.9583333333333334
+    ]
+  },
+  "test": {
+    "accuracy": 0.9,
+    "accuracy_ci95": [
+      0.8,
+      1.0
+    ],
+    "balanced_accuracy": 0.9,
+    "macro_f1": 0.899749373433584,
+    "weighted_f1": 0.8997493734335839,
+    "log_loss": 0.1855319815812621,
+    "roc_auc_ovr_macro": 0.9933333333333333,
+    "roc_auc_micro": 0.9916666666666667,
+    "cohen_kappa": 0.85,
+    "mcc": 0.8514202182000767,
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        2
+      ],
+      [
+        0,
+        1,
+        9
+      ]
+    ],
+    "classification_report": {
+      "setosa": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 10.0
+      },
+      "versicolor": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "f1-score": 0.8421052631578947,
+        "support": 10.0
+      },
+      "virginica": {
+        "precision": 0.8181818181818182,
+        "recall": 0.9,
+        "f1-score": 0.8571428571428571,
+        "support": 10.0
+      },
+      "accuracy": 0.9,
+      "macro avg": {
+        "precision": 0.9023569023569024,
+        "recall": 0.9,
+        "f1-score": 0.899749373433584,
+        "support": 30.0
+      },
+      "weighted avg": {
+        "precision": 0.9023569023569025,
+        "recall": 0.9,
+        "f1-score": 0.8997493734335839,
+        "support": 30.0
+      }
+    },
+    "n_correct": 27,
+    "n_errors": 3
+  },
+  "training": {
+    "epochs": 100,
+    "best_val_accuracy": 0.9444444444444444,
+    "best_epoch": 49,
+    "final_train_loss": 0.050211542871235755,
+    "initial_train_loss": 1.0994945417621558,
+    "n_iter_no_change": 50
+  },
+  "pca_visualization": {
+    "accuracy_2d": 0.9,
+    "pc1_pc2_explained": 0.9574390106545363
+  },
+  "permutation_importance": [
+    {
+      "feature": "sepal_width",
+      "importance_mean": 0.088,
+      "importance_std": 0.039866
+    },
+    {
+      "feature": "petal_length",
+      "importance_mean": 0.116,
+      "importance_std": 0.06574
+    },
+    {
+      "feature": "sepal_length",
+      "importance_mean": 0.158,
+      "importance_std": 0.056099
+    },
+    {
+      "feature": "petal_width",
+      "importance_mean": 0.218667,
+      "importance_std": 0.07123
+    }
+  ],
+  "seed_stability": {
+    "seeds": [
+      42,
+      7,
+      2024,
+      1,
+      13,
+      99,
+      123,
+      777,
+      314,
+      2025
+    ],
+    "runs": [
+      {
+        "seed": 42,
+        "accuracy": 0.9,
+        "macro_f1": 0.899749,
+        "epochs": 100
+      },
+      {
+        "seed": 7,
+        "accuracy": 0.866667,
+        "macro_f1": 0.861111,
+        "epochs": 71
+      },
+      {
+        "seed": 2024,
+        "accuracy": 0.9,
+        "macro_f1": 0.899749,
+        "epochs": 79
+      },
+      {
+        "seed": 1,
+        "accuracy": 0.9,
+        "macro_f1": 0.899749,
+        "epochs": 79
+      },
+      {
+        "seed": 13,
+        "accuracy": 0.866667,
+        "macro_f1": 0.861111,
+        "epochs": 71
+      },
+      {
+        "seed": 99,
+        "accuracy": 0.866667,
+        "macro_f1": 0.86532,
+        "epochs": 64
+      },
+      {
+        "seed": 123,
+        "accuracy": 0.866667,
+        "macro_f1": 0.86532,
+        "epochs": 74
+      },
+      {
+        "seed": 777,
+        "accuracy": 0.8,
+        "macro_f1": 0.78022,
+        "epochs": 56
+      },
+      {
+        "seed": 314,
+        "accuracy": 0.933333,
+        "macro_f1": 0.93266,
+        "epochs": 73
+      },
+      {
+        "seed": 2025,
+        "accuracy": 0.933333,
+        "macro_f1": 0.933333,
+        "epochs": 74
+      }
+    ],
+    "accuracy_mean": 0.8833333333333334,
+    "accuracy_std": 0.0392837100659193,
+    "accuracy_min": 0.8,
+    "accuracy_max": 0.9333333333333333
+  },
+  "learning_curve": {
+    "train_sizes": [
+      19,
+      34,
+      49,
+      65,
+      80,
+      96
+    ],
+    "train_mean": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.9916666666666666
+    ],
+    "train_std": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.010206207261596593
+    ],
+    "val_mean": [
+      0.925,
+      0.95,
+      0.9666666666666668,
+      0.9416666666666668,
+      0.9416666666666668,
+      0.9666666666666668
+    ],
+    "val_std": [
+      0.055277079839256664,
+      0.016666666666666698,
+      0.031180478223116186,
+      0.042491829279939886,
+      0.042491829279939886,
+      0.016666666666666653
+    ]
+  },
+  "baseline_test_reference": {
+    "邏輯迴歸": {
+      "accuracy": 0.9333333333333333,
+      "macro_f1": 0.9333333333333332
+    },
+    "SVM (RBF)": {
+      "accuracy": 0.9666666666666667,
+      "macro_f1": 0.9665831244778612
+    },
+    "kNN (k=5)": {
+      "accuracy": 0.9333333333333333,
+      "macro_f1": 0.9326599326599326
+    }
+  },
+  "environment": {
+    "python": "3.14.4",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit_learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

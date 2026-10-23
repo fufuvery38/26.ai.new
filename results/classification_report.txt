@@ -1,0 +1,18 @@
+模型：MLP-8
+測試集 n=30
+
+              precision    recall  f1-score   support
+
+      setosa     1.0000    1.0000    1.0000        10
+  versicolor     0.8889    0.8000    0.8421        10
+   virginica     0.8182    0.9000    0.8571        10
+
+    accuracy                         0.9000        30
+   macro avg     0.9024    0.9000    0.8997        30
+weighted avg     0.9024    0.9000    0.8997        30
+
+混淆矩陣（列=實際, 欄=預測）:
+[[10  0  0]
+ [ 0  8  2]
+ [ 0  1  9]]
+Accuracy 95% bootstrap CI: [0.8000, 1.0000]

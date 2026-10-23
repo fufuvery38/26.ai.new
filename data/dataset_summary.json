@@ -1,0 +1,68 @@
+{
+  "source": "UCI Machine Learning Repository（archive.ics.uci.edu/dataset/53/iris）",
+  "source_url": "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data",
+  "retrieved": "2026-10-23",
+  "n_rows": 150,
+  "n_features": 4,
+  "features": [
+    "sepal_length",
+    "sepal_width",
+    "petal_length",
+    "petal_width"
+  ],
+  "class_counts": {
+    "setosa": 50,
+    "versicolor": 50,
+    "virginica": 50
+  },
+  "missing_values": 0,
+  "duplicate_rows": 1,
+  "duplicate_rows_raw": 3,
+  "matches_sklearn": true,
+  "corrections": [
+    {
+      "row_1based": 35,
+      "feature": "petal_width",
+      "from": 0.1,
+      "to": 0.2
+    },
+    {
+      "row_1based": 38,
+      "feature": "sepal_width",
+      "from": 3.1,
+      "to": 3.6
+    },
+    {
+      "row_1based": 38,
+      "feature": "petal_length",
+      "from": 1.5,
+      "to": 1.4
+    }
+  ],
+  "value_ranges": {
+    "sepal_length": {
+      "min": 4.3,
+      "max": 7.9,
+      "mean": 5.843333333333334
+    },
+    "sepal_width": {
+      "min": 2.0,
+      "max": 4.4,
+      "mean": 3.0573333333333337
+    },
+    "petal_length": {
+      "min": 1.0,
+      "max": 6.9,
+      "mean": 3.7580000000000005
+    },
+    "petal_width": {
+      "min": 0.1,
+      "max": 2.5,
+      "mean": 1.1993333333333336
+    }
+  },
+  "sha256_raw": "6f608b71a7317216319b4d27b4d9bc84e6abd734eda7872b71a458569e2656c0",
+  "sha256_bezdek": "0fed2a99db77ec533a62dc66894d3ec6df3b58b6a8f3cf4a6b47e4086b7f97dc",
+  "sha256_csv": "e404da8a0348eaa780e968c07a8f4dc90fe90eea54ddceeb5b444ce0caae8d30",
+  "license_note": "Iris 資料集為公開發表之學術資料（Fisher, 1936），常作為機器學習教學範例。"
+}

@@ -1,0 +1,46 @@
+{
+  "standardized": true,
+  "explained_variance_ratio": [
+    0.7296244541329989,
+    0.22850761786701754,
+    0.036689218892828765,
+    0.005178709107154877
+  ],
+  "cumulative_variance": [
+    0.7296244541329989,
+    0.9581320720000165,
+    0.9948212908928452,
+    1.0
+  ],
+  "n_components_for_95pct": 2,
+  "n_components_for_99pct": 3,
+  "loadings": {
+    "PC1": {
+      "sepal_length": 0.5211,
+      "sepal_width": -0.2693,
+      "petal_length": 0.5804,
+      "petal_width": 0.5649
+    },
+    "PC2": {
+      "sepal_length": 0.3774,
+      "sepal_width": 0.9233,
+      "petal_length": 0.0245,
+      "petal_width": 0.0669
+    },
+    "PC3": {
+      "sepal_length": 0.7196,
+      "sepal_width": -0.2444,
+      "petal_length": -0.1421,
+      "petal_width": -0.6343
+    },
+    "PC4": {
+      "sepal_length": -0.2613,
+      "sepal_width": 0.1235,
+      "petal_length": 0.8014,
+      "petal_width": -0.5236
+    }
+  },
+  "pc1_interpretation": "花瓣長度、花瓣寬度與花萼長度同向載荷，代表整體花朵尺寸。",
+  "pc2_interpretation": "花萼寬度為主，且與花瓣尺寸方向相反，對比花萼寬度與花瓣大小。",
+  "pc3_interpretation": "主要區分花萼長度與花瓣寬度的細微差異，解釋量很低。"
+}
