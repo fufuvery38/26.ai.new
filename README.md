@@ -6,6 +6,13 @@
 [![Python](https://img.shields.io/badge/Python-3.14-3776AB)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9-F7931E)](https://scikit-learn.org/)
 
+## 專案索引
+
+| 專案 | 主題 | 狀態 | 事件單 |
+| --- | --- | --- | --- |
+| Iris（本頁） | 資料探索、PCA 3D 視覺化、MLP 分類 | 已完成 | [#2](https://github.com/fufuvery38/26.ai.new/issues/2) |
+| [AI4I 2020](ai4i2020/ISSUE.md) | 預測性維護、不平衡分類、故障模式可學習性 | 規劃完成 | [#4](https://github.com/fufuvery38/26.ai.new/issues/4) |
+
 ## 重點結果
 
 | 項目 | 結果 |
@@ -43,7 +50,7 @@ python src/05_build_paper.py  # Markdown → 可攜式 HTML
 
 ```text
 .
-├── ISSUE.md                     # 事件單（與 GitHub Issue #3 同步）
+├── ISSUE.md                     # 事件單（與 GitHub Issue #2 同步）
 ├── README.md
 ├── run_all.py                   # 一鍵重現
 ├── requirements.txt
