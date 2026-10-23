@@ -11,7 +11,7 @@
 | 專案 | 主題 | 狀態 | 事件單 |
 | --- | --- | --- | --- |
 | Iris（本頁） | 資料探索、PCA 3D 視覺化、MLP 分類 | 已完成 | [#2](https://github.com/fufuvery38/26.ai.new/issues/2) |
-| [AI4I 2020](ai4i2020/ISSUE.md) | 預測性維護、不平衡分類、故障模式可學習性 | 規劃完成 | [#4](https://github.com/fufuvery38/26.ai.new/issues/4) |
+| [AI4I 2020](ai4i2020/README.md) | 預測性維護、不平衡分類、故障模式可學習性 | 階段 0 完成 | [#4](https://github.com/fufuvery38/26.ai.new/issues/4) |
 
 ## 重點結果
 
