@@ -4,7 +4,7 @@
 | --- | --- |
 | 事件類型 | 資料分析／機器學習專題 |
 | 優先級 | 中 |
-| 狀態 | **Open（進行中；階段 0 完成）** |
+| 狀態 | **Open（進行中；階段 1 完成）** |
 | 負責人 | @fufuvery38 |
 | 建立日期 | 2026-10-23 |
 | 資料集 | AI4I 2020 Predictive Maintenance Dataset（UCI #601，10,000 筆 × 14 欄） |
@@ -70,15 +70,15 @@ AI4I 2020 是 UCI 的預測性維護資料集，目標欄位為 `Machine failure
 
 ### 1. 探索式資料分析（EDA）
 
-- [ ] 呈現類別不平衡與各故障模式占比（長條圖、重疊情形）
-- [ ] 各特徵的分布、箱型圖與分模式比較
-- [ ] 相關係數熱圖，並說明 Pearson 係數在非線性與不平衡下的限制
-- [ ] 扭矩 × 轉速散點圖疊加功率等值線，標示 PWF 邊界
-- [ ] 溫差 × 轉速散點圖，標示 HDF 邊界
-- [ ] 磨耗 × 扭矩散點圖，標示 OSF／TWF 區域
-- [ ] 依機型與磨耗分桶計算故障率，說明混雜因素（機型的操作條件不同）
-- [ ] 檢查 `UDI` 順序下的磨耗累積與重置型態
-- [ ] 輸出 `results/eda_summary.json` 與 `results/eda_summary.md`
+- [x] 呈現類別不平衡與各故障模式占比（長條圖、重疊情形）
+- [x] 各特徵的分布、箱型圖與分模式比較
+- [x] 相關係數熱圖，並說明 Pearson 係數在非線性與不平衡下的限制
+- [x] 扭矩 × 轉速散點圖疊加功率等值線，標示 PWF 邊界
+- [x] 溫差 × 轉速散點圖，標示 HDF 邊界
+- [x] 磨耗 × 扭矩散點圖，標示 OSF／TWF 區域
+- [x] 依機型與磨耗分桶計算故障率，說明混雜因素（機型的操作條件不同）
+- [x] 檢查 `UDI` 順序下的磨耗累積與重置型態
+- [x] 輸出 `results/eda_summary.json` 與 `results/eda_summary.md`
 
 ### 2. 特徵工程與洩漏防護
 
@@ -161,6 +161,7 @@ AI4I 2020 是 UCI 的預測性維護資料集，目標欄位為 `Machine failure
 ## 進度紀錄
 
 - **2026-10-23**：階段 0 完成。原始 zip／CSV 與整理後 CSV 均通過 SHA-256 驗證；產出 `data/README.md`、`data/dataset_summary.json`、`results/data_audit.json`、`results/data_audit.md`。腳本可重複執行且輸出位元組完全相同。
+- **2026-10-23**：階段 1 完成。產出 11 張 EDA 圖與 `results/eda_summary.json`、`results/eda_summary.md`；確認多數類基準 accuracy 為 96.61%、PWF／HDF 邊界可完全還原、磨耗序列有 119 次重置。
 
 ## 交付物
 
