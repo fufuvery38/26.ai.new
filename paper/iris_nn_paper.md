@@ -521,5 +521,5 @@ python run_all.py
 ## 附錄 C　資料與程式碼可用性
 
 - 程式碼與完整結果：<https://github.com/fufuvery38/26.ai.new>
-- 事件單：<https://github.com/fufuvery38/26.ai.new/issues/3>
+- 事件單：<https://github.com/fufuvery38/26.ai.new/issues/2>
 - 原始資料：UCI Machine Learning Repository, Iris Data Set（公開資料）。

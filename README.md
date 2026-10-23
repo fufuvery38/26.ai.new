@@ -2,7 +2,7 @@
 
 以 Fisher（1936）的經典 Iris 資料集完成一套可重現的端到端機器學習專題：資料取得與勘誤、探索式分析、PCA 三維視覺化、多層感知器（MLP）分類，以及依實際結果撰寫的小論文。
 
-[![事件單](https://img.shields.io/badge/Issue-%233-1f4e79)](https://github.com/fufuvery38/26.ai.new/issues/3)
+[![事件單](https://img.shields.io/badge/Issue-%232-1f4e79)](https://github.com/fufuvery38/26.ai.new/issues/2)
 [![Python](https://img.shields.io/badge/Python-3.14-3776AB)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9-F7931E)](https://scikit-learn.org/)
 
